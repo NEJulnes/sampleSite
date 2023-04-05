@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="us-en" charset="utf-8">
+        <title></title>
+        <style>
+            .sunset {
+                color: white;
+                margin: 0;
+                font-family: Lato, sans-serif;
+            }
+            .sunset > p {
+                padding: 8px 8px 8px 8px;
+                margin: 0;
+            }
+            .sunset > p {
+                background-color:navy;
+            }
+            .sunset table {
+                border-spacing: 0;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            .sunset tbody {
+                padding: 0;
+                margin: 0;
+            }
+            .sunset tr:has(+ td) {
+                padding: 0;
+                margin: 0;
+            }
+            .sunset td {
+                padding: 8px;
+            }
+            .sunset td:nth-child(4n+1) {
+                background-color:crimson;
+            }
+            .sunset td:nth-child(4n+2) {
+                
+                background-color:slateblue;
+            }
+            .sunset td:nth-child(4n+3) {
+                color: black;
+                background-color:orange;
+            }
+            .sunset td:nth-child(4n+4) {
+                color: black;
+                background-color:yellow;
+            }
+
+
+
+            .big-arrow-circle {
+                border-radius: 100%;
+                width: 64px;
+                height: 64px;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                align-items: center;
+                font-size: 64px;
+                position: relative;
+                box-sizing: border-box;
+            }
+            .sunset td:nth-child(4n+1) > .big-arrow-circle {
+                color: crimson;
+                background-color: white;
+            }
+            .sunset td:nth-child(4n+2) > .big-arrow-circle {
+                color: slateblue;
+                background-color: white;
+            }
+            .sunset td:nth-child(4n+3) > .big-arrow-circle {
+                color: orange;
+                background-color: black;
+            }
+            .sunset td:nth-child(4n+4) > .big-arrow-circle {
+                color: yellow;
+                background-color: black;
+            }
+
+            .img-grid {
+                display: grid;
+                grid-auto-flow: row;
+                grid-auto-columns: minmax(0, 1fr);
+                width: auto;
+                padding: 32px;
+                column-gap: 32px;
+                row-gap: 32px;
+                color: black;
+                background-color: yellow;
+            }
+            .img-grid > img {
+                object-fit: cover;
+                max-width: 100%;
+            }
+            .img-grid > div {
+                width: 100%;
+                height: 100%;
+            }
+            .img-grid > img:nth-child(3n+3) {
+                grid-column: 3;
+            }
+
+        </style>
+    </head>
+    <body class="sunset">
+        <p>Hello World! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit arcu, viverra ac.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit arcu, viverra ac.</p>
+                        <span class="big-arrow-circle">&#8250;</span>
+                    </td>
+                    <td>
+                        <h2>2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit arcu, viverra ac.</p>
+                        <span class="big-arrow-circle">&#8250;</span>
+                    </td>
+                    <td>
+                        <h2>3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit arcu, viverra ac.</p>
+                        <span class="big-arrow-circle">&#8250;</span>
+                    </td>
+                    <td>
+                        <h2>4</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit arcu, viverra ac.</p>
+                        <span class="big-arrow-circle">&#8250;</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="img-grid">
+            <!-- source of images https://imgur.com/t/sample/tNi79fL -->
+            <img src="./img/bay.jpeg">
+            <img src="./img/beach.jpeg">
+            <img src="./img/canyon.jpg">
+            <img src="./img/city.jpeg">
+            <img src="./img/cliffs.jpeg">
+            <img src="./img/falls.jpeg">
+            <!--<img src="./img/mosque.jpeg">-->
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit arcu, viverra ac.</p>
+            </div>
+            <img src="./img/town.jpeg">
+            <img src="./img/winter.jpeg">
+        </div>
+    </body>
+</html>
